@@ -10,6 +10,19 @@ A stdio [Model Context Protocol](https://modelcontextprotocol.io/) server for Mi
 
 ## Install
 
+### Easiest: let Codex configure it
+
+Paste this into a Codex desktop task—no clone is required:
+
+> Read https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/AGENTS.md and follow it to install the complete OneNote plugin in the Codex desktop app.
+
+Codex will add this repository as a plugin marketplace, install the complete
+OneNote plugin, verify its MCP server, and explain when a desktop-app restart or
+new task is required. Users do not need to clone the repository or edit MCP JSON
+or TOML files.
+
+### Install for development
+
 ```powershell
 git clone https://github.com/seanGSISG/onenote-mcp.git
 cd onenote-mcp

@@ -1,0 +1,27 @@
+{
+  "name": "onenote",
+  "version": "1.0.2",
+  "description": "Read, search, and create Microsoft OneNote content through Microsoft Graph.",
+  "author": {
+    "name": "Sean Swanson"
+  },
+  "homepage": "https://github.com/seanGSISG/onenote-mcp",
+  "repository": "https://github.com/seanGSISG/onenote-mcp",
+  "license": "MIT",
+  "keywords": ["onenote", "microsoft-graph", "mcp", "notes"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Microsoft OneNote",
+    "shortDescription": "Read and write OneNote content",
+    "longDescription": "Browse notebooks and sections, search and read pages, and create new OneNote pages through Microsoft Graph.",
+    "developerName": "Sean Swanson",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "defaultPrompt": [
+      "Show my OneNote notebooks.",
+      "Search my OneNote pages.",
+      "Create a new OneNote page."
+    ]
+  }
+}
