@@ -10,7 +10,40 @@ A stdio [Model Context Protocol](https://modelcontextprotocol.io/) server for Mi
 
 ## Install
 
-### Easiest: let Codex configure it
+### Option 1: Add from the desktop GUI
+
+1. Open the ChatGPT desktop app, select **Plugins**, and open the marketplace
+   settings next to **Installed**.
+
+   ![Open the Plugins marketplace settings](https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/docs/assets/gui-install/01-open-marketplace-dialog.png)
+
+2. Select **Add plugin marketplace** and enter:
+
+   - **Source:** `https://github.com/seanGSISG/onenote-mcp.git`
+   - **Git ref:** `main`
+   - **Sparse paths:** leave blank
+
+   ![Enter the OneNote marketplace repository](https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/docs/assets/gui-install/02-enter-repository.png)
+
+3. Select **Add marketplace**, return to **Plugins**, and select the
+   **Personal** tab. If the new marketplace does not appear, completely restart
+   the desktop app and return to **Plugins**.
+4. Select **Sean's OneNote Plugin** and choose **Install** beside
+   **Microsoft OneNote**.
+
+   ![Install Microsoft OneNote from the new marketplace](https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/docs/assets/gui-install/03-install-plugin.png)
+
+5. Restart the desktop app again, open a new task, and ask:
+   `Authenticate with OneNote.`
+
+**Watch or download the full 26-second walkthrough:**
+[H.264 MP4](https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/docs/assets/gui-install/add-marketplace.mp4) ·
+[WebM](https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/docs/assets/gui-install/add-marketplace.webm)
+
+> GitHub recommends H.264 for the broadest browser compatibility. The original
+> WebM recording is included as an alternative.
+
+### Option 2: Let Codex configure it
 
 Paste this into a Codex desktop task—no clone is required:
 
@@ -21,7 +54,7 @@ OneNote plugin, verify its MCP server, and explain when a desktop-app restart or
 new task is required. Users do not need to clone the repository or edit MCP JSON
 or TOML files.
 
-### Install for development
+### Option 3: Install for development
 
 ```powershell
 git clone https://github.com/seanGSISG/onenote-mcp.git
@@ -32,7 +65,7 @@ npm test
 
 The MCP SDK is installed from npm. A separate SDK checkout and build are no longer required.
 
-## Codex configuration
+## Advanced: MCP-only configuration
 
 Add this to `~/.codex/config.toml`, replacing the path with the absolute path to `onenote-mcp.mjs`:
 
