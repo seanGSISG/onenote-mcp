@@ -12,10 +12,10 @@ A stdio [Model Context Protocol](https://modelcontextprotocol.io/) server for Mi
 
 ### Option 1: Add from the desktop GUI
 
-1. Open the ChatGPT desktop app, select **Plugins**, and open the marketplace
-   settings next to **Installed**.
+1. Open the Codex desktop app, select **Plugins**, open **Create**, and select
+   **Add marketplace**.
 
-   ![Open the Plugins marketplace settings](https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/docs/assets/gui-install/01-open-marketplace-dialog.png)
+   ![Select Add marketplace from the Create menu](https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/docs/assets/gui-install/1.png)
 
 2. Select **Add plugin marketplace** and enter:
 
@@ -23,7 +23,7 @@ A stdio [Model Context Protocol](https://modelcontextprotocol.io/) server for Mi
    - **Git ref:** `main`
    - **Sparse paths:** leave blank
 
-   ![Enter the OneNote marketplace repository](https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/docs/assets/gui-install/02-enter-repository.png)
+   ![Enter the OneNote marketplace repository](https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/docs/assets/gui-install/2.png)
 
 3. Select **Add marketplace**, return to **Plugins**, and select the
    **Personal** tab. If the new marketplace does not appear, completely restart
@@ -31,17 +31,10 @@ A stdio [Model Context Protocol](https://modelcontextprotocol.io/) server for Mi
 4. Select **Sean's OneNote Plugin** and choose **Install** beside
    **Microsoft OneNote**.
 
-   ![Install Microsoft OneNote from the new marketplace](https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/docs/assets/gui-install/03-install-plugin.png)
+   ![Install Microsoft OneNote from the Personal marketplace tab](https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/docs/assets/gui-install/3.png)
 
 5. Restart the desktop app again, open a new task, and ask:
    `Authenticate with OneNote.`
-
-**Watch or download the full 26-second walkthrough:**
-[H.264 MP4](https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/docs/assets/gui-install/add-marketplace.mp4) ·
-[WebM](https://raw.githubusercontent.com/seanGSISG/onenote-mcp/main/docs/assets/gui-install/add-marketplace.webm)
-
-> GitHub recommends H.264 for the broadest browser compatibility. The original
-> WebM recording is included as an alternative.
 
 ### Option 2: Let Codex configure it
 
