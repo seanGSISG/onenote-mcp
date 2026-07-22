@@ -1,0 +1,55 @@
+{
+  "name": "@seangsisg/onenote-mcp",
+  "version": "1.0.2",
+  "description": "Modern MCP server for Microsoft OneNote with device-code authentication",
+  "type": "module",
+  "main": "onenote-mcp.mjs",
+  "bin": {
+    "onenote-mcp": "onenote-mcp.mjs"
+  },
+  "files": [
+    "onenote-mcp.mjs",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node onenote-mcp.mjs",
+    "check": "node --check onenote-mcp.mjs && node --check src/auth-manager.mjs && node --check src/onenote-client.mjs && node --check src/server.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.13.1",
+    "@modelcontextprotocol/server": "^2.0.0-beta.5",
+    "dotenv": "^17.4.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.0.0-beta.5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "mcp",
+    "onenote",
+    "modelcontextprotocol",
+    "device-code-auth"
+  ],
+  "author": "Zubeid Hendricks",
+  "contributors": [
+    "Sean Swanson"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanGSISG/onenote-mcp.git"
+  },
+  "homepage": "https://github.com/seanGSISG/onenote-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/seanGSISG/onenote-mcp/issues"
+  },
+  "license": "MIT"
+}
